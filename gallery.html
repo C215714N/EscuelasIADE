@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Web</title>
+</head>
+<body>
+    <!-- Cabecera de Pagina -->
+    <header>
+        <h1>Diseño de Paginas Web</h1>
+        <p>HTML | CSS | JS</p>
+        <!-- Navegacion -->
+        <nav>
+            <ul>
+                <li><!-- Ruta Relativa (Interna) -->
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li><!-- Ruta Ancla (Marcador) | [refresh]-->
+                    <a href="#">Galeria</a>
+                </li>
+                <li><!-- Ruta Ancla (Marcador) | [#id ]-->                    
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido Principal -->
+    <main>
+        <article>
+            <h2>Imágenes en la Web</h2>
+            <p>
+                podemos incorporar este tipo de elemento en nuestra pagina gracias a la etiqueta <strong>&lt;img></strong>, que posee los atributos<em>src="..."</em> y <em>alt="..."</em>, que corresponden al origen y descripcion de la misma.
+            </p>
+            <h3>Formatos de Imagen</h3>
+            <p>
+                Existen diferentes formatos entre los cuales podemos destacar los siguientes.
+            </p>
+            <ul>
+                <li>
+                    <strong>JPG: </strong> Joint Photographic Expert Group es un formato de imagen ligero, que admite compresion, se utiliza normalmente en camaras fotograficas y por lo tanto en galerias.
+                </li>
+                <li>
+                    <strong>PNG: </strong> Portable Network Graphics es formato de imagen que admite el uso de una canal alfa, es decir, permite implementar transparencias y es utilizado para fondos.
+                </li>
+                <li>
+                    <strong>GIF: </strong> Graphics Interchange Format es un formato de imagen que admite hasta 256 colores e interpolacion de elemntos, para la creacion de animaciones por superposicion de imagenes.
+                </li>
+                <li>
+                    <strong>WEBP: </strong> Web Picture es un formato de imagen raster (mapa de bits) desarrollado por Google con la finalidad de facilitar la comparticion de contenido a traves de la web.
+                </li>
+                <li>
+                    <strong>SVG: </strong> Scalable Vector Graphics es un formato de imagen creado a partir lineas y curvas generadas mediante calculos, y su diseño no se ve alterardo si cambiamos su tamaño.
+                </li>
+            </ul>
+            <div>
+                <img src="./assets/img/jjba-theworld-01.jpg" alt="Dibujo JoJo's Bizarre Adventure the World">
+                <img src="./assets/img/jjba-theworld-02.jpg" alt="Dibujo JoJo's Bizarre Adventure the World">
+                <img src="./assets/img/jjba-theworld-03.jpg" alt="Dibujo JoJo's Bizarre Adventure the World">
+                <img src="./assets/img/jjba-theworld-04.jpg" alt="Dibujo JoJo's Bizarre Adventure the World">
+
+                <img src="./assets/img/jjba-killerqueen-01.jpg" alt="Dibujo JoJo's Bizarre Adventure Killer Queen">
+                <img src="./assets/img/jjba-killerqueen-02.jpg" alt="Dibujo JoJo's Bizarre Adventure Killer Queen">
+                <img src="./assets/img/jjba-killerqueen-03.jpg" alt="Dibujo JoJo's Bizarre Adventure Killer Queen">
+                <img src="./assets/img/jjba-killerqueen-04.jpg" alt="Dibujo JoJo's Bizarre Adventure Killer Queen">
+
+                <img src="./assets/img/jjba-kingcrimson-01.jpg" alt="Dibujo JoJo's Bizarre Adventure King Crimson">
+                <img src="./assets/img/jjba-kingcrimson-02.jpg" alt="Dibujo JoJo's Bizarre Adventure King Crimson">
+                <img src="./assets/img/jjba-kingcrimson-03.jpg" alt="Dibujo JoJo's Bizarre Adventure King Crimson">
+                <img src="./assets/img/jjba-kingcrimson-04.jpg" alt="Dibujo JoJo's Bizarre Adventure King Crimson">
+            </div>
+            <h3>Nomenclatura y Disposicion</h3>
+            <p class="box">
+                <img src="./assets/bg/osx-big-sur-light.jpg" alt="Fondo de Pantalla OS X Big Sur">
+
+                las imagenes, al igual que cualquier otro archivo que utilicemos dentro del proyecto debe cumplir con algunos requisitos si no queremos tener inconvenientes al momento de subir nuestro proyecto a un servidor de hosting.
+
+                Entre dichas caracteristicas se encuentran la <strong>implementacion de nombres sencillos y descriptivos</strong> como <em>"background.jpg"</em> o <em>"whatsapp-icon.svg"</em> para facilitar la implementacion de los mismos.
+
+                Tambien conviene <strong>evitar el uso de caracteres especiales</strong> como por ejemplo <em>el espacio que sera traducido a %20</em> y por lo tanto si nuestro archivo se llama "foto 01.jpg" sera interpretado como "foto%2001.jpg", resultando que nuestro navegador nos  advierta que no existe dicho archivo.
+            </p>
+            <p class="box">
+                <img src="./assets/bg/osx-big-sur-dark.jpg" alt="Fondo de Pantalla OS X Big Sur">
+
+                Otro detalle a tener en cuenta, es el servidor utilizado, ya que la mayoria estan basados en UNIX o GNU y por lo tanto son <strong>caseSensitive</strong>, es decir, distinguen entre mayusculas y minusculas.
+
+                Esto quiere decir que nuestro servidor interprera que por mas que se llamen igual, si los nombres se encuentran escritos de manera diferente, que "background.jpg", "Background.jpg" y "BACKGROUND.jpg" son archivos diferentes, resultado en la aparicion del texto alternativo. 
+                
+                Por estas razones es importante que tengamos control sobre el nombre, la ruta y la forma en la que se escriben los nombres de los archivos.
+
+            </p>
+        </article>
+    </main>
+    <!-- Pie de Pagina -->
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">facebook</a>
+            <a href="https://instagram.com" target="_blank">instagram</a>
+            <a href="https://twitter.com" target="_blank">twitter</a>
+            <a href="https://github.com/c215714n/escuelasIADE/tree/web-design" target="_blank">github</a>
+        </div>
+        <!-- Derechos de autor -->
+        <p id="contact">&copy;2023 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
