@@ -1,0 +1,39 @@
+# Configuracion Aplicacion
+vendor
+node_modules
+__pycache__
+.vscode/
+
+# Temporales de Entorno
+temp
+cache
+*.temp
+*.bak
+*.tmp
+*.swp
+
+# Entorno de Desarrollo
+*.pyc
+*.o
+.env
+
+# registro de cambios
+logs
+*.log
+*.log*
+
+#Compresion de Datos
+*.7z
+*.jar
+*.rar
+*.zip
+*.gz
+*.gzip
+*.tgz
+*.bzip
+*.bzip2
+*.bz2
+*.xz
+*.lzma
+*.cab
+*.xar
